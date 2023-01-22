@@ -1,0 +1,93 @@
+hmset utakmica:1 domacin 'West Ham' domacin_golovi 0 gost 'Manchester City' gost_golovi 2 kolo 1
+hmset utakmica:2 domacin 'Leicester' domacin_golovi 2 gost 'Brentford' gost_golovi 2 kolo 1
+hmset utakmica:3 domacin 'Manchester United' domacin_golovi 1 gost 'Brighton' gost_golovi 2 kolo 1
+hmset utakmica:4 domacin 'Everton' domacin_golovi 0 gost 'Chelsea' 0 gost_golovi 0 kolo 1
+hmset utakmica:5 domacin 'Bournemouth' domacin_golovi 2 gost 'Aston Villa' gost_golovi 0 kolo 1
+hmset utakmica:6 domacin 'Leeds' domacin_golovi 2 gost 'Wolverhampton' gost_golovi 1 kolo 1
+hmset utakmica:7 domacin 'Newcastle United' domacin_golovi 2 gost 'Nottingham Forest' gost_golovi 0 kolo 1
+hmset utakmica:8 domacin 'Tottenham' domacin_golovi 4 gost 'Southampton' gost_golovi 1 kolo 1
+hmset utakmica:9 domacin 'Fulham' domacin_golovi 2 gost 'Liverpool' gost_golovi 2 kolo 1
+hmset utakmica:10 domacin 'Crystal Palace' domacin_golovi 0 gost 'Arsenal' gost_golovi 2 kolo 1
+hmset utakmica:11 domacin 'Liverpool' domacin_golovi 1 gost 'Crystal Palace' gost_golovi 1 kolo 2
+hmset utakmica:12 domacin 'Chelsea' domacin_golovi 2 gost 'Tottenham' gost_golovi 2 kolo 2
+hmset utakmica:13 domacin 'Nottingham Forest' domacin_golovi 1 gost 'West Ham' gost_golovi 0 kolo 2
+hmset utakmica:14 domacin 'Brentford' domacin_golovi 4 gost 'Manchester United' gost_golovi 0 kolo 2
+hmset utakmica:15 domacin 'Arsenal' domacin_golovi 4 gost 'Leicester' gost_golovi 2 kolo 2
+hmset utakmica:16 domacin 'Brighton' domacin_golovi 0 gost 'Newcastle United' gost_golovi 0 kolo 2
+hmset utakmica:17 domacin 'Manchester City' domacin_golovi 4 gost 'Bournemouth' gost_golovi 0 kolo 2
+hmset utakmica:18 domacin 'Southampton' domacin_golovi 2 gost 'Leeds' gost_golovi 2 kolo 2
+hmset utakmica:19 domacin 'Wolverhampton' domacin_golovi 0 gost 'Fulham' gost_golovi 0 kolo 2
+hmset utakmica:20 domacin 'Aston Villa' domacin_golovi 2 gost 'Everton' gost_golovi 1 kolo 2
+hmset utakmica:21 domacin 'Manchester United' domacin_golovi 2 gost 'Liverpool' gost_golovi 1 kolo 3
+hmset utakmica:22 domacin 'Newcastle United' domacin_golovi 3 gost 'Manchester City' gost_golovi 3 kolo 3
+hmset utakmica:23 domacin 'Leeds' domacin_golovi 3 gost 'Chelsea' gost_golovi 0 kolo 3
+hmset utakmica:24 domacin 'West Ham' domacin_golovi 0 gost 'Brighton' gost_golovi 2 kolo 3
+hmset utakmica:25 domacin 'Bournemouth' domacin_golovi 0 gost 'Arsenal' gost_golovi 3 kolo 3
+hmset utakmica:26 domacin 'Crystal Palace' domacin_golovi 3 gost 'Aston Villa' gost_golovi 1 kolo 3
+hmset utakmica:27 domacin 'Everton' domacin_golovi 1 gost 'Nottingham Forest' gost_golovi 1 kolo 3
+hmset utakmica:28 domacin 'Fulham' domacin_golovi 3 gost 'Brentford' gost_golovi 2 kolo 3
+hmset utakmica:29 domacin 'Leicester' domacin_golovi 1 gost 'Southampton' gost_golovi 2 kolo 3
+hmset utakmica:30 domacin 'Tottenham' domacin_golovi 1 gost 'Wolverhampton' gost_golovi 0 kolo 3
+hmset utakmica:31 domacin 'Nottingham Forest' domacin_golovi 0 gost 'Tottenham' gost_golovi 2 kolo 4
+hmset utakmica:32 domacin 'Aston Villa' domacin_golovi 0 gost 'West Ham' gost_golovi 1 kolo 4
+hmset utakmica:33 domacin 'Wolverhampton' domacin_golovi 1 gost 'Newcastle United' gost_golovi 1 kolo 4
+hmset utakmica:34 domacin 'Arsenal' domacin_golovi 2 gost 'Fulham' gost_golovi 1 kolo 4
+hmset utakmica:35 domacin 'Brentford' domacin_golovi 1 gost 'Everton' gost_golovi 1 kolo 4
+hmset utakmica:36 domacin 'Brighton' domacin_golovi 1 gost 'Leeds' gost_golovi 0 kolo 4
+hmset utakmica:37 domacin 'Chelsea' domacin_golovi 2 gost 'Leicester' gost_golovi 1 kolo 4
+hmset utakmica:38 domacin 'Liverpool' domacin_golovi 9 gost 'Bournemouth' gost_golovi 0 kolo 4
+hmset utakmica:39 domacin 'Manchester City' domacin_golovi 4 gost 'Crystal Palace' gost_golovi 2 kolo 4
+hmset utakmica:40 domacin 'Southampton' domacin_golovi 0 gost 'Manchester United' gost_golovi 1 kolo 4
+hmset utakmica:41 domacin 'Leicester' domacin_golovi 0 gost 'Manchester United' gost_golovi 1 kolo 5
+hmset utakmica:42 domacin 'Liverpool' domacin_golovi 2 gost 'Newcastle United' gost_golovi 1 kolo 5
+hmset utakmica:43 domacin 'West Ham' domacin_golovi 1 gost 'Tottenham' gost_golovi 1 kolo 5
+hmset utakmica:44 domacin 'Arsenal' domacin_golovi 2 gost 'Aston Villa' gost_golovi 1 kolo 5
+hmset utakmica:45 domacin 'Bournemouth' domacin_golovi 0 gost 'Wolverhampton' gost_golovi 0 kolo 5
+hmset utakmica:46 domacin 'Manchester City' domacin_golovi 6 gost 'Nottingham Forest' gost_golovi 0 kolo 5
+hmset utakmica:47 domacin 'Leeds' domacin_golovi 1 gost 'Everton' gost_golovi 1 kolo 5
+hmset utakmica:48 domacin 'Southampton' domacin_golovi 2 gost 'Chelsea' gost_golovi 1 kolo 5
+hmset utakmica:49 domacin 'Crystal Palace' domacin_golovi 1 gost 'Brentford' gost_golovi 1 kolo 5
+hmset utakmica:50 domacin 'Fulham' domacin_golovi 2 gost 'Brighton' gost_golovi 1 kolo 5
+
+hmset vest:1 klub 'Arsenal' tekst 'ODEGARD, UMESTO DA POSTANE NOVI MESSI ZLATNI DECKO JE ODABRAO BITI SVOJ I SADA VODI KLUB PREMA TITULI'
+hmset vest:2 klub 'Arsenal' tekst 'Preokret oko Brozovica. Arsenal zavrsio veliki posao'
+hmset vest:3 klub 'Arsenal' tekst 'LEGENDA ARSENALA ,MARC OVERMARS, HOSPITALIZIRANA U TESKOM STANJU, NJEGOV PROBLEM SA SRCEM NEMOGUCE JE IZLECITI'
+hmset vest:4 klub 'Manchester City' tekst 'Guardiola priznao problem s Halandom: Ne dobija dovoljno lopti'
+hmset vest:5 klub 'Manchester City' tekst 'MANCHESTER CITY KLUB S NAJVECIM PRIHODIMA U SEZONI 2021/22'
+hmset vest:6 klub 'Manchester City' tekst 'Haland: Solsir mi je rekao da nemam pojma o igranju glavom. I to je bilo dobro'
+hmset vest:7 klub 'Manchester United' tekst 'Ronaldo otišao iz Manchester Uniteda i onda potpisao za saudijski Al Nassr uz platu od 200 miliouna eura po sezoni.'
+hmset vest:8 klub 'Manchester United' tekst 'KRILNI igrac Chelseaja Hakim Ziyech želi da ide u Barcelonu kao zamjena za Memphisa Depaya koji je otisao u Manchester United,'
+hmset vest:9 klub 'Manchester United' tekst 'Francuzi: Manchester United i Tottenham zele Majera, misle da je Modricev nasljednik'
+hmset vest:10 klub 'Tottenham' tekst 'Francuzi: Manchester United i Tottenham zele Majera, misle da je Modricev nasljednik'
+hmset vest:11 klub 'Tottenham' tekst 'HARRY KANE NAPUSTA TOTTENHAM?'
+hmset vest:12 klub 'Brighton' tekst 'Chelsea zeli još jednog igraca Brightona za 80 milijona evra?'
+hmset vest:13 klub 'Chelsea' tekst 'Chelsea zeli još jednog igraca Brightona za 80 milijona evra?'
+hmset vest:14 klub 'Fulham' tekst 'MITROVIC IZ PENALA NAPUCAO - SAMOG SEBE!'
+hmset vest:15 klub 'Liverpool' tekst 'Klopp izgubio 3:0'
+hmset vest:16 klub 'Brentford' tekst 'Beckham pozajmio sina Brentfordu'
+hmset vest:17 klub 'Aston Villa' tekst 'Aston Villa protiv Leedsa produzila niz bez poraza'
+hmset vest:18 klub 'Nottingham Forest' tekst 'Iz brazilskog prvaka Palmeirasaza 18 milijona evra stigao 21-godisnji vezni igrac Danilo.'
+hmset vest:19 klub 'Wolverhampton' tekst 'Je li Wolverhamptonu opravdano ponisten gol? Komentator: Jednostavno nemam rijeci'
+hmset vest:20 klub 'Nottingham Forest' tekst 'Leeds u FA kupu s lakocom svladao drugoligasa'
+
+ZADD klubovi 18 'West Ham'
+ZADD klubovi 42 'Manchester City'
+ZADD klubovi 18 'Leicester'
+ZADD klubovi 29 'Brentford'
+ZADD klubovi 39 'Manchester United'
+ZADD klubovi 31 'Brighton'
+ZADD klubovi 15 'Everton'
+ZADD klubovi 29 'Chelsea'
+ZADD klubovi 17 'Bournemouth'
+ZADD klubovi 28 'Aston Villa'
+ZADD klubovi 17 'Leeds'
+ZADD klubovi 17 'Wolverhampton'
+ZADD klubovi 39 'Newcastle United'
+ZADD klubovi 21 'Nottingham Forest'
+ZADD klubovi 33 'Tottenham'
+ZADD klubovi 15 'Southampton'
+ZADD klubovi 31 'Fulham'
+ZADD klubovi 29 'Liverpool'
+ZADD klubovi 24 'Crystal Palace'
+ZADD klubovi 47 'Arsenal'
+

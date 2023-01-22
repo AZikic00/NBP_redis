@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PL</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Premier League</h1>
+    </div>
+    <div class="forma">
+    <div>
+        <form class="navbar-form" id="register">
+            <div class="form-group">
+                <label class="label">Korisnicko ime:</label>
+                <input type="text" value="" placeholder="" class="form-control" name="username">
+            </div>
+            <div class="form-group">
+                <label class="label">
+                    Sifra:
+                </label>
+                    <input type="password" value="" placeholder="" class="form-control" name="password">
+            </div>
+            <div class="form-group">
+                <label class="label">
+                    Ponovite sifru:
+                </label>
+                <input type="password" value="" placeholder="" class="form-control" name="passwordrepeat">
+            </div>
+            <div>
+                <label class="label">
+                    Omiljeni klub:
+                </label>
+                <input list="Klubovi" name="klub" class="dropdown">
+                <datalist id="Klubovi">
+               </datalist>
+            </div>
+            <button class="btn" type="submit">Register</button>
+        </form>
+    </div>
+
+    <div>
+        <form class="navbar-form" id="login">
+            <div class="form-group">
+                <label class="label">
+                    Korisnicko ime:
+                    </label>
+                    <input type="text" value="" placeholder="" class="form-control" name="username">
+            </div>
+            <div class="form-group">
+                <label class="label">
+                    Sifra:
+                    </label>
+                    <input type="password" value="" placeholder="" class="form-control" name="password">
+            </div>
+            <button class="btn" type="submit">Log in</button>
+        </form>
+    </div>
+    </div>
+    <style type="text/css">
+        .header {
+            text-align: center;
+            background: #38043c;
+            color: white;
+            font-size: 18px;
+            width: 100%;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            height: 60px;
+            padding: 10px;
+            border: none;
+            margin: auto;
+        }
+        .forma {
+            margin: auto;
+            width: 20%;
+            padding: 10px;
+            border: 2px solid #38043c;
+            text-align: center;
+            top: 300px;
+            position: relative;
+        }
+        .form-group {
+            align-items: center;
+        }
+        .btn {
+            color: #38043c;
+            font-size: 15px;
+            border: 2px solid #38043c;
+        }
+        .form-control {
+            color: #38043c;
+            font-size: 15px;
+            border: 2px solid #38043c;
+            margin:3px;
+        }
+        .dropdown {
+            color: #38043c;
+            font-size: 15px;
+            border: 2px solid #38043c;
+            margin: 3px;
+        }
+        .label {
+            color: #38043c;
+            font-size: 15px;
+        }
+    </style>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        $(function () {
+
+            function register() {
+                const username = $("#register").find("input[name=username]").val();
+                const password = $("#register").find("input[name=password]").val();
+                const passwordrepeat = $("#register").find("input[name=passwordrepeat]").val();
+                const klub = $("#register").find("input[name=klub]").val();
+                if (password == passwordrepeat) {
+                    $.post("/register/" + encodeURIComponent(username) + "/" + encodeURIComponent(password) + "/" + encodeURIComponent(klub), function (data) {
+                        if (data) {
+                            window.alert("Uspesna registracija");
+                        }
+                        else { window.alert("Korisnik sa tim imenom vec postoji"); }
+                    });
+                }
+                else {
+                    window.alert("Sifre se ne poklapaju");
+                }
+
+                return false;
+            }
+
+            function login() {
+                const username = $("#login").find("input[name=username]").val();
+                const password = $("#login").find("input[name=password]").val();
+                $.get("/login/" + encodeURIComponent(username) + "/" + encodeURIComponent(password), function (data) {
+                    if (data) {
+                        localStorage.setItem('username', $("#login").find("input[name=username]").val());
+                        window.location.assign("pocetna.html");
+                    }
+                    else { window.alert("Pogresan username ili password"); }
+                });
+
+                return false;
+            }
+
+            function sviKlubovi() {
+                $.get("/sviKlubovi",
+                    function (data) {
+                        const t = $("datalist#Klubovi").empty();
+                        if (!data || data.length == 0) return;
+                        data.forEach(function (str) {
+                            $("<option>" + str + "</option>").appendTo(t)
+                        });
+                    }, "json");
+                return false;
+            }
+
+
+            $("#register").submit(register);
+            $("#login").submit(login);
+            sviKlubovi();
+        })</script>
+</body>
+</html>
