@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\baze-redis.props" />
+</Project>
